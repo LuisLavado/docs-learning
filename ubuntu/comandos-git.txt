@@ -1,0 +1,29 @@
+# Crear clave para SSH
+ssh-keygen -t rsa -b 4096 -C "miemailgithuh.com"
+
+#Evaluar mi ssh-agent
+eval "$(ssh-agent -s)"
+#Image in:
+storage/images/git-key-ssh.png
+
+# Copiar la llave pública
+ssh-copy-id miemailgithuh.com
+
+# Vamos al directorio en donde se encuentra nuestra llave pública
+cd ~/.ssh
+ls
+# Leemos y copiamos nuestra llave
+cat id_rsa.pub
+#Image in:
+storage/images/git-key-ssh-2.png
+
+agragamos nuestra llave privado:
+ssh-add ~/.ssh/id_rsa
+#Image in:
+storage/images/git-key-ssh-2.png
+
+# Ahora vamos a "Githut", en "settings", luego en "SSH and GPG keys", y registramos nuestra llave
+
+# Editar el archivo de confuguracion global
+git config --edit --global
+

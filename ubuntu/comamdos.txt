@@ -1,0 +1,24 @@
+Ver la versión de Linux que esta corriendo:
+$ cat /etc/lsb-release
+$ lsb_release -a
+
+cd => nos lleva a 'home'
+cd .. => Regreso un directorio atras
+cd ../.. => Regreso mas atras
+ls
+ls -l
+ls -lh => Ver achivos con pesos (MBytes, GBytes)
+ls -la => Ver todos los archivos, incluye archivos ocultos (los que tienen . al inicio)
+ls -ls => ordena los archivos por tamaños
+ls -lsh => Ordena los archivos por tamaños, con pesos (MBytes, GBytes)
+ls -lr => ordena archivos en orden descendente
+pwd => Me dice la ruta en donde estamos
+file nombre_archivo => Me dice los detalles del archivo
+tree => despliga nuestros achivos en arbol
+tree -L 2 => despliga nuestros achivos en arbol en 2 niveles
+tree -L 1 => despliga nuestros achivos en arbol en 1 nivel
+
+mkdir nombre_directorio => crear directorio
+mkdir nombre_directorio1 nombre_directorio2 nombre_directorio3 => crear varios directorios
+touch nombre_archivo => crear archivo
+touch nombre_archivo1 nombre_archivo2 nombre_archivo3 => crear varios archivos

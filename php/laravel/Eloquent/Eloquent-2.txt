@@ -1,0 +1,27 @@
+Post::get();-> Trae todos los registros de la base de datos
+Post::frist();-> Trae el primer registro de la base de datos
+Post::find(id); -> Busca un registro en la base de datos por medio de su id
+Post::latest(); -> Trae todos los registros de la base de datos, y los ordena de forma descendente
+
+adicional, podemos utilizar el método paginate(), para realizar la paginación, solo no nos debemos de incluir en nuestras vistas la propiedad links() para que podamos visualizar los controles de paginación
+$posts = Post::latest('id')->paginate();
+
+Entonces busca por el nombre del campo, si quieres buscar un post especifico
+
+
+Post::where('nombre_campo_base_datos', 'id')->first();
+
+////////////////////
+El método dd() muestra los elementos de la variable y finaliza la ejecución del script:
+dd($value);
+dd($valuea, $valueb);
+
+Si no desea detener la ejecución, utilice la función dump() en su lugar.
+////////////////////
+El método latest permite ordenar fácilmente los resultados por fecha. Por defecto, el resultado se ordenará por la columna created_at de la tabla.
+
+Para poder ordenar de manera descendente el ‘‘id’’ ; se debe poner en el parámetro de latest() y colocar el método first () para ordenar desde el id =>1
+
+$posts = Cats::latest('id')->first()->paginate();
+            return view('gato', compact('posts'));
+

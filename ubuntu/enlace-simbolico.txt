@@ -1,0 +1,7 @@
+lsb_release -a
+
+sudo ln -s /mnt/d/PROJECTS/html-css-projects/ dev-html-css
+
+ln -s archivo.txt enlace
+nano enlace
+rm enlace

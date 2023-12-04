@@ -1,0 +1,5 @@
+Ver la versión de Linux que esta corriendo:
+lsb_release -a
+
+Organizacion de captetas:
+

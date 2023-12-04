@@ -1,0 +1,12 @@
+Correr
+
+Crear un archivo de migracion
+> php artisan make:migration create_nombretabla_table
+Ejemplo: tabla posts
+> php artisan make:migration create_posts_table
+
+
+// El siguiente comando elimina todo de la base de datos, y vuelve a crear solo lo que esta en los
+// archivos de migraciones
+# php artisan migrate:refresh --seed
+

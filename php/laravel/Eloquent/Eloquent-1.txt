@@ -1,0 +1,25 @@
+Eloquent
+Eloquent es una herramienta que proporciona Laravel para poder manejar fácilmente a nuestras bases de datos que es una sintaxis propia de Laravel.
+
+Para poder usar eloquent se tiene que importar el modelo de la clase que vamos a consultar con la sentencia use App\Models\nombreModelo donde el nombreModelo es modelo que vamos a utilizar, y para manejar las consultas se debe poner la lógica en el controlador por lo tanto es allí donde debemos importar el modelo.
+
+Algunas sentencias importantes de eloquent son:
+
+nombreModelo::get(): el cual trae todos los registros de la base de datos.
+nombreModelo::first(): el cual nos trae el primer registro de nuestra base de datos.
+nombreModelo::find(id): el cual nos trae el registro especificado.
+nombreModelo::latest('columna'): el cual nos ordena de menor a mayor los registros de la columna especificada.
+->paginate(número_registros_por_pagina) este se le puede poner a todas las sentencias que tragan varios registros para paginar todos los registros que traga según un número especificado.
+Nota: El objeto a resultante de la paginación tiene un método llamado ->link() el cual el cual nos imprime la paginación en pantalla, los elementos que nos da son:
+
+̇« Previous: el cual nos permite ir a la página anterior
+Next »: el cual nos permite el a la página siguiente
+Showing x to x of x result el cual nos dice desde que número de registro vemos hasta cual vemos y cuantos registros hay en total
+ícono de anterior: el cual nos permite ir a la página anterior
+ícono de siguiente: el cual nos permite ir a la siguiente página
+paginas que existen: es una enumeración de páginas para decirnos en qué número de página estamos.
+Donde:
+
+nombreModelo: es el nombre del modelo que vamos a consultar.
+columna: columna que se selecciona para hacer la operación de la sentencia
+número_registros_por_pagina: el número de registros que tenga cada página.

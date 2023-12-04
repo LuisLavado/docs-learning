@@ -1,0 +1,14 @@
+sudo apt-get install php8.1-ctype
+sudo apt-get install php8.1-curl
+sudo apt-get install php8.1-dom
+sudo apt-get install php8.1-fileinfo
+sudo apt-get install php8.1-filter
+sudo apt-get install php8.1-hash
+sudo apt-get install php8.1-mbstring
+sudo apt-get install php8.1-openssl
+sudo apt-get install php8.1-pcre
+sudo apt-get install php8.1-pdo
+sudo apt-get install php8.1-session
+sudo apt-get install php8.1-tokenizer
+sudo systemctl restart php8.1-fpm
+

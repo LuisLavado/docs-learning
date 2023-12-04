@@ -1,0 +1,5 @@
+Ver detalles del comando de creacion de modelos:
+> php artisan make:model --help
+
+Creamos el model `Post`, factory y controller
+> php artisan make:model Post -fc

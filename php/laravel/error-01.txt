@@ -1,0 +1,22 @@
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Root composer.json requires laravel/pint ^1.0 -> satisfiable by laravel/pint[v1.0.0, ..., v1.3.0].
+    - laravel/pint[v1.0.0, ..., v1.3.0] require ext-xml * -> it is missing from your system. Install or enable PHP's xml extension.
+  Problem 2
+    - phpunit/phpunit[9.5.10, ..., 9.5.x-dev] require ext-dom * -> it is missing from your system. Install or enable PHP's dom extension.
+    - Root composer.json requires phpunit/phpunit ^9.5.10 -> satisfiable by phpunit/phpunit[9.5.10, ..., 9.5.x-dev].
+
+Solution 1 
+sudo apt-get install php8.1-xml
+Solution 2
+sudo apt-get install php8.1-dom
+
+############################################################################
+Problem 1
+    - spatie/laravel-ignition[1.0.0, ..., 1.6.3] require ext-curl * -> it is missing from your system. Install or enable PHP's curl extension.
+    - Root composer.json requires spatie/laravel-ignition ^1.0 -> satisfiable by spatie/laravel-ignition[1.0.0, ..., 1.6.3].
+
+Solution 2
+sudo apt-get install php8.1-curl
+############################################################################

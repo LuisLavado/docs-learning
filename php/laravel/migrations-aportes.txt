@@ -1,0 +1,37 @@
+///////////////////////////////////////////////////////////////
+Los Migrations son como un control de versiones para nuestra base de datos, 
+permitiendo a nosotros y a nuestro equipo definir el esquema (schema) de nuestra base 
+de datos y poder compartirla.
+
+Como bien mencionamos, las migraciones se encargan de definir todas las tablas y 
+atributos de nuestra base de datos desde nuestra aplicación de php, haciendo uso 
+de una interfaz orientada a objetos (OOP).
+
+Una de sus mayores ventajas es que podemos tener diferentes versiones de nuestra base de 
+datos, como si de git se tratace, además nos permite generar tablas para diferentes motores 
+de base de datos (MySQL, MariaBD, SQLite, PostgreSQL, etc) haciendo uso del mismo lenguaje, php.
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+Todo lo que son migraciones, controladores y factories tienen su origen en los modelos es 
+decir no tiene sentido tener una migración, un factory sino existe un modelo.
+
+Así que una forma facil de crear todo seria partir del modelo con un comando tipo:
+
+> php artisan make:model Post -mcf
+
+Lo que dice es creame un modelo Post, además su migración, además su controlador y además su 
+factory.
+Con esto podriamos evitar algún error de dedo.
+
+Adicionalmente como todos los controladores o generalmente van a tener los mismos métodos 
+de: listar, crear, actualizar y borrar podemos agregar algo asi:
+
+> php artisan make:model Post -mcf --resource
+
+Lo que hace adicionalmente es crear los métodos básicos de un crud en el controllador
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+

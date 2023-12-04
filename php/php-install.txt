@@ -1,0 +1,72 @@
+Subsistema de Windows para Linux
+WSL 2
+
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+
+# Preguntamos al repositorio de dependencias si hay actualizaciones:
+sudo apt-get update
+sudo apt update
+# Aplicamos la actualizaciones
+sudo apt-get upgrade
+sudo apt upgrade
+
+#Podemos tener más de una versión de php en linux, pero solo una de apache
+sudo apt install php7.0 apache2
+sudo apt install php8.1
+
+# Consultar las versiones de php instaladas
+sudo dpkg --get-selections | grep php
+
+# Consultar version de php 7
+php7.0 --version
+# Consultar version de php 8.1
+php8.1 --version
+
+# Habilitar la version de php
+sudo a2enmod php8.1
+# Dashabilitar la version de php, luego debo reiniciar apache
+sudo a2dismod php8.1
+
+# Habilitar la version de php
+sudo a2enmod php7.0
+
+# Reiniciar apache
+systemctl restart apache2
+
+# Ubicación de los archivos php
+cd /var/www/html
+# Listar archivos y carpetas de un directorio
+ls
+# Eliminar archivo 
+sudo rm index.html
+# Crear archivo 
+sudo touch index.php
+# Editar el archivo
+sudo nano index.php
+# Escribimos
+phpinfo();
+#Ingresamos a http://localhost
+
+# Archivo de configuración de php
+sudo nano /etc/php/7.0/apache2/php.ini
+# Habilitamos la visualización de errores. 
+# Buscamos "display_errors = Off" y lo cambiamos a:
+display_errors = On
+
+# Nota: En caso te aparecan errores en el localhost, 
+# problamente te falten instalar las siguientes dependencias
+sudo apt install libapache2-mod-php7.0
+
+# PHP en la consola iteractiva
+# Activar php, en la consola
+php -a
+# Ahora podemos escribir php, para salir de la consola: Ctrl + c
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+composer global require laravel/installer
+ 
+laravel new credigas-backend
+laravel new api-backend
+
+# En caso no funcione => laravel new api-backend:
+sudo nano ~/.bash_profile
+# Y pegar 
+export PATH="~/.config/composer/vendor/bin:$PATH"
+# guardas los cambios y luego ejecutas lo siguiente
+source ~/.bash_profile
+
+# Nuevamente
+laravel new api-backend
+
+# Entrar a la carpeta 'api-backend' y crear Model-Controller-Migration-Factory
+php artisan make:model Post -cmf
+
+# comando de migracion, despues de configurar los models y el seeder
+php artisan migrate --seed
+
+# Controller 1 For API
+php artisan make:controller Api/V1/PostController --api --model=Post
+
+# Ver las rutas disponibles
+php artisan route:list
+
+#
+php artisan make:resource V1/PostResource
+
+# Siempre versiona tu API. El versionado te ayuda a iterar más rápido y evitar peticiones inválidas desde endpoints actualizados. Además te ayuda a resolver cualquier transición importante de versión de la API mientras continúas ofreciendo viejas versiones de la API por un período de tiempo.
+
+Hay opiniones cruzadas respecto si la versión de la API debería ser incluida en la URL o en el encabezado. Académicamente hablando, debería probablemente estar en el encabezado. Sin embargo, la versión necesita estar en la URL para asegurar la posibilidad de explorar en el navegador los recursos a través de las versiones (recuerda los requerimientos de la API especificados al inicio del artículo).
+
+Soy un gran fanático del alcance que Stripe ha tomado respecto al versionado de la API - la URL tiene un número de versión principal (v1), pero la API tiene las sub-versiones basadas en fechas que pueden ser elegidas mediante un encabezado de petición HTTP personalizado. En este caso, la versión principal proporciona la estabilidad estructural de la API en su conjunto, mientras que las sub-versiones representan cambios más pequeños (campos inhabilitados, cambios en el endpoint, etc).
+
+Una API nunca va a ser completamente estable. El cambio es inevitable. Lo importante es cómo se gestiona el cambio. Anuncios de fechas y planificaciones bien documentados puede ser una buena práctica para muchas APIs. Todo se reduce a lo que es razonable teniendo en cuenta la industria y los posibles consumidores de la API.
+
+fuente: https://elbauldelprogramador.com/buenas-practicas-para-el-diseno-de-una-api-restful-pragmatica/
+
+
+
+
+

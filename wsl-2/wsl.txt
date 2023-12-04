@@ -1,0 +1,14 @@
+Instalar distribución de Linux:
+1) Abra PowerShell.
+2) Ver distribuciones instaladas: wsl -l -v
+3) Ver distribuciones disponibles: wsl -l -o
+4) Instalar: wsl --install -d <distro>
+
+Eliminar distribución de Linux:
+1) Abra PowerShell.
+2) Para obtener el nombre exacto de la distribución que desea, ingrese wsl -l -v.
+3) Entrar en la terminal wsl --unregister <distro name>.
+
+Copia de seguridad e importación a WSL:
+wsl --export <distro> <filename.tar>
+wsl --import <distro> <install location> <filename> 

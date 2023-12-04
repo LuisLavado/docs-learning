@@ -1,0 +1,49 @@
+Si les da error al escribir el comando
+
+php artisan migrate:refresh --seed
+
+
+Posiblemente nombraron mal sin querer al crear la migracion de la bases de datos de la clase 
+anterior, es decir borren el archivo nuevo en la carpeta migrations y vuelvanlo a generar 
+con el siguiente comando
+
+php artisan make:migration create_posts_table
+
+
+En ese archivo nuevo escriben otra vez todo lo que se va a injectar a la base de datos
+
+Asegurense de hacer drop a la base de datos para que se generen los nuevos archivos sin errores.
+
+de esa manera lo pude solucionar yo, espero que ayude a alguien este aporte
+///////////////////////////////////////////////////////////////
+En este caso cuando creo migraciones para evitar colocar el nombre “create_<nombre>_table” 
+prefiero utilizar el comando de modelo diciéndole que cree la migración por si solo, recuerda 
+que los modelos son nombrados en singular y las migraciones en plural, con el siguiente comendo 
+Laravel lo hace por si solo:
+
+php artisan make:model Post -mfc
+///////////////////////////////////////////////////////////////
+Para ver los distintos formatos que podemos usar con Faker:
+https://fakerphp.github.io/formatters/
+///////////////////////////////////////////////////////////////
+Hola! para los que al ejecutar el comando php artisan refresh --seed les sale el 
+error "C:\xampp\htdocs\proyecto\vendor\laravel\framework\src\Illuminate\Database\Connection.php:5
+PDOException:😦"SQLSTATE[22001]: String data, right truncated: 1406 Data too long for colu
+
+2 C:\xampp\htdocs\proyecto\vendor\laravel\framework\src\Illuminate\Database\Connection.php:5
+PDOStatement::execute()"
+
+Es porque definimos el campo de la base de datos como “text” este tiene una longitud de 
+solo 255 caracteres, y en el factory forzamos a la creacion del lorem ipsum con 2200 caracteres, 
+solo tendriamos que cambiar la propiedad del campo de la tabla de “text” a “long Text” que 
+permite mas caracteres, o directamente en el factory no utilizar 2200 caracteres sino 200 que 
+esta en el rango de la longitud permitida, con fines de avanzar en el ejercicio
+
+///////////////////////////////////////////////////////////////
+Para los que les sale el siguiente error: ⛔ SQLSTATE[42S02]: Base table or view not found: 1146 Table......... Solo fui a mi modelo y agregué lo siguiente: 👉 protect $table = 'name_table' ;
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+

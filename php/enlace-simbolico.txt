@@ -1,0 +1,17 @@
+Crear enlace simbólico en Linux para archivos
+En general, para crear enlaces utilizamos el comando ln y la opción -s para especificar enlaces simbólicos. Esta es la forma más fácil de garantizar un enfoque flexible que permita experimentar con el lenguaje tanto como sea posible. No hay nada de difícil en crear enlaces simbólicos en Linux: solo necesita seguir un simple paso.
+
+D:\PROJECTS\php\www
+
+sudo ln -s /mnt/d/PROJECTS/php/www/ devroot
+
+Eliminar
+
+sudo unlink devroot
+
+
+#################################################
+cd /var/www/
+sudo ln -s /mnt/d/LEARNING dev-tests
+
+

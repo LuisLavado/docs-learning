@@ -1,0 +1,27 @@
+# Preguntamos al repositorio de dependencias si hay actualizaciones:
+sudo apt-get update
+# Aplicamos la actualizaciones
+sudo apt-get upgrade
+
+# Instatar NodeJS:
+sudo apt install nodejs
+
+# Instatar npm:
+sudo apt install npm
+
+# Crear proyecto reactJS
+npx create-react-app test
+
+# Dar permisos para tu proyecto:
+sudo chown -R nombre_usuario path/to/folder
+# Ejemplo
+sudo chown -R ingeluisito ~/personalProjects
+
+# Instalar GitHub
+# Verificar
+git --version
+# Instalar
+sudo apt install git
+
+
+

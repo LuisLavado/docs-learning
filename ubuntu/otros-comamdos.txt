@@ -1,0 +1,7 @@
+cat nombre_archivo => muestra el contenido del archivo
+man cat => muestrael manuel del comamdo cat
+
+rm nombre_archivo.extension => Borrar archivo
+rm -d nombre_directorio_vacio => Borrar directorio vacio
+rm -rf nombre_directorio => Borrar directorio con archivos
+

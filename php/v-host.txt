@@ -1,0 +1,23 @@
+#
+cd /etc/apache2/sites-available
+#
+ls
+# Copio el archivo 000-default.conf
+sudo cp 000-default.conf ptcalculator.conf
+#
+ls
+# Editar el archivo
+code ptcalculator.conf
+# Configuramos el virtualhost: ptcalculator.test
+/var/www/devroot/ptcalculator
+....
+
+# Luego, vamos a editar
+sudo code /etc/hosts
+# 
+127.0.0.1 ptcalculator.test
+
+#
+cd /etc/apache2/sites-available
+#
+sudo a2ensite ptcalculator.conf

@@ -1,0 +1,51 @@
+Para instalar React y React DOM usamos el comando:
+
+npm install react react-dom --save
+
+Eso instala automáticamente la última versión de estas tecnologías.
+
+Si quieres usar otra versión, usamos el símbolo @ y la versión con la que queramos trabajar (por ejemplo, en este curso usaremos React 17, así que la instalación puede realizarse con el comando 
+npm install react@17 react-dom@17 --save
+
+
+
+Proyecto de React Shop
+cd D:\LEARNING\react-learning\
+mkdir react-shop
+cd react-shop
+D:\LEARNING\react-learning\react-shop>
+
+npm init
+package name: (react-shop)
+version: (1.0.0)
+description: react eshop
+entry point: (index.js) src/index.js
+keywords: react, javascript
+author: Luis Lavado <luis.lavado.llaro@gmail.com>
+license: (ISC) MIT
+
+npm install react@17 react-dom@17 --save
+
+Babel:
+npm install @babel/core @babel/preset-env @babel/preset-react
+
+Webpack:
+npm install webpack webpack-cli webpack-dev-server 
+
+HTML plugin:
+npm install babel-loader html-loader html-webpack-plugin
+
+Sass:
+npm i mini-css-extract-plugin css-loader style-loader sass sass-loader -D
+
+Rutas:
+npm install react-router-dom
+
+Axios:
+npm install axios
+
+Para correr axios:
+npm install @babel/plugin-transform-runtime
+
+
+

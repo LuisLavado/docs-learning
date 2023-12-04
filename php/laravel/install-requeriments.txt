@@ -1,0 +1,38 @@
+Ctype PHP Extension:
+sudo apt-get install php8.1-ctype
+
+cURL PHP Extension:
+sudo apt-get install php8.1-curl
+
+DOM PHP Extension:
+sudo apt-get install php8.1-dom
+
+Fileinfo PHP Extension:
+sudo apt-get install php8.1-fileinfo
+
+Filter PHP Extension:
+sudo apt-get install php8.1-filter
+
+Hash PHP Extension:
+sudo apt-get install php8.1-hash
+
+Mbstring PHP Extension:
+sudo apt-get install php8.1-mbstring
+
+OpenSSL PHP Extension:
+sudo apt-get install php8.1-openssl
+
+PCRE PHP Extension:
+sudo apt-get install php8.1-pcre
+
+PDO PHP Extension:
+sudo apt-get install php8.1-pdo
+
+Session PHP Extension:
+sudo apt-get install php8.1-session
+
+Tokenizer PHP Extension:
+sudo apt-get install php8.1-tokenizer
+
+sudo systemctl restart php8.1-fpm
+
