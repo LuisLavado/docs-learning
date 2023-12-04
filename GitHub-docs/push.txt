@@ -1,0 +1,24 @@
+
+👉 git remote add origin url_repositorio
+
+Comandos para ver despues de agregar el origin
+👉 git remote
+👉 git remote -v
+
+-v: sea verbal
+
+👉 git push origin master
+
+
+CAMBIAR LA RAMA `master` POR `main`
+
+Establecer la rama main como principal
+👉 git branch -M main
+
+👉 git push origin main
+
+👉 git push origin main --allow-unrelated-histories
+
+👉 git diff
+
+

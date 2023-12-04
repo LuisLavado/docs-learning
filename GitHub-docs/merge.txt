@@ -1,0 +1,28 @@
+************************************************************************************************
+************************************************************************************************
+(START) CAMBIAR DE RAMA
+************************************************************************************************
+git fetch
+git checkout bugfix/SIAN-5472
+************************************************************************************************
+(END) CAMBIAR DE RAMA
+************************************************************************************************
+************************************************************************************************
+(START) ACTUALIZAR RAMA (MEZCLAR RAMAS)
+************************************************************************************************
+-- cambiamos a master
+git checkout master
+-- traemos los últimos cambios que hayan subido en master a mi local
+git pull
+-- cambio a mi rama de desarrollo
+git checkout feature/SIAN-xxxx-LL
+-- mezcló con los cambios de master
+git merge master
+-- Si salen conflictos resolver en NEtbeans y hacer un commit 
+git commit -m "Resolucion de conflictos"
+git push origin feature/SIAN-xxxx-LL
+-- Sino 
+git push origin feature/SIAN-xxxx-LL
+************************************************************************************************
+(END) ACTUALIZAR RAMA (MEZCLAR RAMAS)
+************************************************************************************************

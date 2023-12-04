@@ -1,10 +1,8 @@
-
-
-git log
 Realiza el seguimiento de los commits realizados
+👉 git log
 
-git branch
-Te muestra la lista de las ramas
+Show list of the branchs
+👉 git branch
 
 
 

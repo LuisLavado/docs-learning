@@ -1,0 +1,41 @@
+Configura tus llaves SSH en local:
+
+Ver configuracion de GIT
+👉 git config -l
+
+Generar una nueva llave SSH: (Cualquier sistema operativo)
+👉 ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+También se puede usar el siguiente comando:
+👉 ssh-keygen -t ed25519 -C "youremail@example.com"
+
+Comprobar proceso (Windows)
+👉 eval $(ssh-agent - s)
+
+Comprobar proceso (Mac)
+👉 eval "$(ssh-agent -s)"
+
+Agregar la llave (llave privada):
+👉 ssh-add ~/.ssh/id_rsa
+
+¿Usas macOS Sierra 10.12.2 o superior?
+Haz lo siguiente:
+👉 cd ~/.ssh
+Crea un archivo config…
+Con Vim 
+👉 vim config
+Con VSCode code config
+Pega la siguiente configuración en el archivo…
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+Agrega tu llave
+👉 ssh-add -K ~/.ssh/id_rsa
+
+
+Ahora en GitHub:
+
+> Settings > SSH and GPG keys > New key SSH
+
+Y añades tu llave
