@@ -1,0 +1,7 @@
+Lecturas recomendadas
+
+Pseudoelementos - CSS | MDN:
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
+
+FAQ/Methodology/BEM:
+https://en.bem.info/methodology/faq/#why-bem

@@ -1,0 +1,52 @@
+sudo dpkg --get-selections | grep php
+sudo apt install mysql-server
+sudo mysql
+sudo apt-get install apache2 libapache2-mod-php7.0
+sudo apt install libapache2-mod-php
+
+sudo apt install php7.0-xml php7.0-gd php7.0-mbstring php7.0-mysql php7.0-bcmath
+sudo apt install curl git unzip
+curl --version
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+composer
+sudo apt-get install phpmyadmin
+
+Install MariaBD :
+~~~~~~~~~~~~~~~~~~~~~~~~
+sudo apt install mariadb-server mariadb-client mariadb-common libmariadb2
+sudo apt install libmysqlclient-dev
+sudo apt install php7.0-mysql
+sudo apt-get install phpmyadmin
+sudo nano /etc/apache2/apache2.conf
+#En la ultima linea agregarmos:
+Include /etc/phpmyadmin/apache.conf
+
+
+
+sudo mysql
+
+use mysql
+
+UPDATE user SET authentication_string = PASSWORD('root') where user='root';
+
+A partir de la version 5.7:
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newPassword';
+
+Example:
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+
+FLUSH PRIVILEGES;
+
+exit;
+
+
+#En caso salga error en al logearse en el phpmyadmin:
+sudo mysql -u root # I had to use "sudo" since it was a new installation
+
+mysql> USE mysql;
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+mysql> exit;
+
+sudo service mysql restart

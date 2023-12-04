@@ -1,0 +1,10 @@
+
+RESET: para volver a una version anterior
+
+git reset 6546541654egerg94egr55444 --hard
+git reset 6546541654egerg94egr55444 --soft
+
+Para ver el historial
+git log
+
+

@@ -1,0 +1,8 @@
+dpkg -l | grep phpmyadmin
+
+sudo apt update
+sudo apt install phpmyadmin
+
+sudo apt-get remove --purge phpmyadmin
+sudo apt-get install phpmyadmin
+

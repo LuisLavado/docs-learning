@@ -1,0 +1,10 @@
+Lecturas recomendadas
+
+Pseudo-classes - CSS | MDN:
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+FAQ/Methodology/BEM:
+https://en.bem.info/methodology/faq/#why-bem
+
+La pseudo-clase tiene ":"
+La pseudo-elemento tiene "::"

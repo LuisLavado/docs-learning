@@ -1,0 +1,21 @@
+Guía escrita:
+INSTALACION DE APACHE2, MYSQL, PHP Y PHPMYADMIN EN UBUNTU 16.04
+
+Instalación de apache2:
+sudo apt-get install apache2
+
+Luego validamos que este correctamente instalado abriendo un navegador y escribiendo en la barra url "localhost" y nos debe aparecer un mensaje de bienenida
+
+Instalación de MYsql:
+sudo apt-get install mysql-server mysql-client php-mysql
+
+Instalación de php
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+
+creamos un archivo llamado info.php y dentro copias lo que ves en el vídeo  luego ese archivo info.php lo copiamos en la ruta /var/www/html pero antes debemos dar permisos a ese directorio de la forma como se muestra en el vídeo
+
+reininiamos apache con el comando service apache2 restart luego entramos a un navegar y escribimos http://localhost/info.php y nos debe aparecer un mensaje igual al del vídeo.
+
+
+Instalación de phpmyadmin
+sudo apt-get install phpmyadmin

@@ -1,0 +1,22 @@
+# Ingresamos a la terminal
+$ sudo mysql -u root -p
+# Ingresamos a la terminal tambien con
+$ sudo mysql -u root -h localhost -p mysql
+
+# Primero me pide la password de mi S.O.
+# Luego la contraseña del usuario 'root' (luislavado)
+
+# Una vez me conecto, escribo el siguiente comando
+CREATE DATABASE api_back;
+-- Ver las base de datos existentes
+SHOW DATABASES;
+# Para salir de cli de MYSQL
+exit;
+
+# Para ejecutar un archivo.sql
+
+#Example
+mysql < name_archivo.sql;
+
+# Real
+mysql < 2-create-database.sql;

@@ -1,0 +1,7 @@
+- Rama creada para soluciones un bug en la rama principal, normalmente se le llama `hotfix`
+- `merge` para mesclar rama
+
+
+
+
+

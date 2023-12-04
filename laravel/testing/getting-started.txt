@@ -1,0 +1,18 @@
+#Para ejecutar los test 
+vendor/bin/phpunit or php artisan test
+
+#Antes de ejecutar sus pruebas.
+config:clear 
+
+
+
+
+
+
+
+
+
+
+
+
+

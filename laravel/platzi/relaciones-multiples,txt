@@ -1,0 +1,17 @@
+Hacer que exista relación entre una tabla y otra a través del testing.
+
+Si queremos hacer test a un modelo concreto por ejemplo, lo haremos de la siguiente forma: 
+php artisan make:test Models/UserTest --unit.
+
+Vamos a comprobar si un usuario tiene muchos repositorios.
+
+Creamos el modelo de lo que queremos que pueda tener varios un usuario, en ese caso repositorios. php artisan make:model Repository -mf. Con -mf creamos el modelo y el factory.
+
+Una vez hecho debemos ir al modelo que queremos que conecte, en ese caso users e indicarle:
+
+
+
+public function repositories()
+{
+  return $this->hasMany(Repository::class);
+}

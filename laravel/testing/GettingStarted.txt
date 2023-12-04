@@ -1,0 +1,35 @@
+#Introduction
+
+Laravel está construido pensando en las pruebas. De hecho, el soporte para pruebas con PHPUnit está incluido de fábrica y ya hay un archivo phpunit.xml configurado para su aplicación. El marco también incluye métodos auxiliares convenientes que le permiten probar sus aplicaciones de manera expresiva.
+
+De forma predeterminada, el directorio de pruebas de su aplicación contiene dos directorios: Característica y Unidad. Las pruebas unitarias son pruebas que se centran en una porción muy pequeña y aislada de su código. De hecho, la mayoría de las pruebas unitarias probablemente se centran en un único método. Las pruebas dentro de su directorio de pruebas "Unidad" no inician su aplicación Laravel y, por lo tanto, no pueden acceder a la base de datos de su aplicación u otros servicios de marco.
+
+Las pruebas de funciones pueden probar una porción más grande de su código, incluida la forma en que varios objetos interactúan entre sí o incluso una solicitud HTTP completa a un punto final JSON. Generalmente, la mayoría de sus pruebas deberían ser pruebas de funciones. Este tipo de pruebas brindan la mayor confianza de que su sistema en su conjunto funciona según lo previsto.
+
+Se proporciona un archivo EjemploTest.php en los directorios de pruebas unitarias y de características. Después de instalar una nueva aplicación Laravel, ejecute los comandos de prueba de proveedor/bin/phpunit o php artisan para ejecutar sus pruebas.
+
+
+# Environment
+
+Al ejecutar pruebas, Laravel configurará automáticamente el entorno de configuración para prueba debido a las variables de entorno definidas en el archivo phpunit.xml. Laravel también configura automáticamente la sesión y el caché en el controlador de matriz durante la prueba, lo que significa que no se conservarán datos de sesión o caché durante la prueba.
+
+Usted es libre de definir otros valores de configuración del entorno de prueba según sea necesario. Las variables del entorno de prueba se pueden configurar en el archivo phpunit.xml de su aplicación, pero asegúrese de borrar su caché de configuración usando el comando config:clear Artisan antes de ejecutar sus pruebas.
+
+##El archivo de entorno .env.testing
+Además, puede crear un archivo .env.testing en la raíz de su proyecto. Este archivo se utilizará en lugar del archivo .env cuando se ejecuten pruebas PHPUnit o se ejecuten comandos Artisan con la opción --env=testing.
+
+##El rasgo CreatesApplication
+Laravel incluye un rasgo CreatesApplication que se aplica a la clase TestCase base de su aplicación. Este rasgo contiene un método createApplication que inicia la aplicación Laravel antes de ejecutar las pruebas. Es importante que dejes este rasgo en su ubicación original ya que algunas funciones, como la función de prueba paralela de Laravel, dependen de ello.
+
+
+#Creating Tests
+
+
+
+
+
+
+
+
+
+

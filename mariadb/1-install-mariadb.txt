@@ -1,0 +1,3 @@
+# Primero ir a 
+https://mariadb.org/download/?t=repo-config
+
