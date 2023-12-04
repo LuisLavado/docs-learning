@@ -1,5 +1,7 @@
 
 
+git log
+Realiza el seguimiento de los commits realizados
 
 git branch
 Te muestra la lista de las ramas
