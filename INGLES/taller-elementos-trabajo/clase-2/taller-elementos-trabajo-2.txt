@@ -1,0 +1,51 @@
+Lee la siguiente conversación entre Veronica y Adam, sobre cómo crear tu perfil profesional. Repite si es necesario.
+
+ID: abreviación de identificación (identification).
+
+Bienvenido o bienvenida a Platzi!
+Veronica: Hello?
+Adam: Hi Veronica! This is Adam, from Platzi’s Human Resources team. How are you?
+Veronica: Oh, hi Adam, it’s nice to hear from you again. I’m doing great. How about you?
+Adam: I’m doing well. I have good news! Your job interview process is complete. Congratulations and welcome to Platzi!
+Veronica: That’s great news! I’m so happy I got the job. I think it is a wonderful opportunity, thank you, Adam. What’s next?
+Adam: I’m going to ask you some questions so we can create your company ID.
+Veronica: Okay!
+Adam: Let’s get started. What is your full name?
+Veronica: My full name is Veronica Williams.
+Adam: How do you spell your name?
+Veronica: That’s V-E-R-O-N-I-C-A W-I-L-L-I-A-M-S
+Adam: Got it. Let’s go with the next question: What’s your date of birth?
+Veronica: I was born on August 21st, 1990
+Adam: Okay, last question: What is your national ID number?
+Veronica: My ID number is 2136787690
+Adam: I’ll confirm, it’s 2136787690. Is that correct?
+Veronica: Yes, it’s correct.
+Adam: Great! I have one more question. What’s your favorite color?
+Veronica: My favorite color is black.
+Adam: Great, that’s all the information I need. Do you have any questions for me?
+Veronica: Yes, when is my start date?
+Adam: Your first day will be next week, on Monday. You will receive an email later today with more details.
+Veronica: I’m excited! Thanks for the call Adam!
+Adam: I’m happy to have you as part of the team. I hope you have a nice day, talk to you soon!
+Veronica: See you soon! Bye!
+
+
+Control de lectura
+Responde la siguiente pregunta según corresponda.
+
+What information is necessary for Adam?
+
+Veronica’s full name
+Veronica’s personal ID number
+Veronica’s favorite color
+Respuestas control de lectura
+Todas las opciones son correctas. Ahora, responde la siguiente pregunta.
+
+What other personal information does Adam need?
+¡Comparte tu trabajo en la sección de aportes!
+
+Ejercicio sobre información personal
+Entra en el siguiente enlace y resuelve la actividad. Las respuestas están al final del archivo.
+
+Your Personal Information - Practice Worksheet
+Contribución creada por Andrés Guano (Platzi Contributor).
