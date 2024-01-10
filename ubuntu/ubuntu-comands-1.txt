@@ -1,0 +1,9 @@
+👉 ls
+
+👉 ls -lac
+
+👉 cat /etc/lsb-release
+
+Ver los procesos en Ubuntu:
+👉 ps
+👉 ps -aux

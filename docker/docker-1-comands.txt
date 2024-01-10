@@ -1,0 +1,29 @@
+Visualizar la version e informacion de docker:
+👉 docker --version
+👉 docker info
+
+Correr el contenedor hello-world:
+👉 docker run hello-world
+
+Mostrar los contenedores activos:
+👉 docker ps
+
+Mostrar todos los contenedores:
+👉 docker ps -a
+
+Mostrar el detalle completo de un contenedor en especifico:
+👉 docker inspect <containe ID>
+ó:
+👉 docker inspect <name>
+
+Asignar un nombre custom "hello-ingluisito":
+👉 docker run –-name hello-ingluisito hello-world
+
+Cambiar el nombre de hello-ingluisito a saludo-ingluisito
+👉 docker rename hello-ingluisito saludo-ingluisito
+
+Borrar un contenedor:
+👉 docker rm <ID o nombre>
+
+Borrar todos lo contenedores que esten parados
+👉 docker container prune

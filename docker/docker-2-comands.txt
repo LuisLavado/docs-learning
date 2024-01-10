@@ -1,0 +1,50 @@
+Corre un ubuntu pero lo deja apagado
+👉 docker run ubuntu
+
+Mostrar todos los contenedores:
+👉 docker ps -a
+
+Correr Ubuntu y entrar su shell (Modo interactivo. )
+👉 docker run -it ubuntu
+-i: interactivo
+-t: abre la consola
+
+Ver la versión de Linux que esta corriendo:
+👉 cat /etc/lsb-release
+
+Salir de Ubuntu y volver a mi consola normal y seguir trabajando con Docker:
+👉 exit
+Al salir de Ubuntu, el contenedor se apagará. Mostrar todos los contenedores:
+👉 docker ps -a
+
+Notas:
+
+Cada vez que un contendor se ejecuta, en realidad lo que ejecuta es un proceso del sistema operativo. Este proceso se le conoce como `Main process`.
+
+`Main process` determina la vida del contenedor, un contendor corre siempre y cuando su proceso principal este corriendo.
+
+`Sub process` => Un contenedor puede tener o lanzar procesos alternos al main process, si estos fallan el contenedor va a seguir encedido a menos que falle el `Main process`.
+
+Lo que necesitamos hacer es correr un proceso que no sea `bin\bash` y que no haga `exit`, para hacer eso vamos a correr un nuevo contenedor:
+👉 docker run --name alwaysup -d ubuntu tail -f /dev/null
+Batch como `Main process`
+Agujero negro (/dev/null) como `Main process`
+👉 docker run --name alwaysup -d ubuntu tail -f /dev/null
+_el ouput que te regresa es el ID del contentedor _
+
+El contendor `alwaysup` permanecerá encendido hasta alguién lo apague, y podemos conectarnos a él cuando querramos.
+
+Te puedes conectar al contenedor y hacer cosas dentro del él con el siguiente comando (sub proceso)
+👉 docker exec -it alwaysup bash
+
+Ver los procesos en Ubuntu
+👉 ps
+👉 ps -aux
+
+Se puede matar un `Main process` desde afuera del contenedor, esto se logra conociendo el id del proceso principal del contenedor que se tiene en la maquina. Para saberlo se ejecuta los siguientes comandos;
+👉 docker inspect --format '{{.State.Pid}}' alwaysup
+_El output del comando es el process ID (2474) _
+
+Para matar el proceso principal del contenedor desde afuera se ejecuta el siguiente comando (solo funciona en linux)
+👉 kill -9 <process ID>
+👉 kill -9 2474

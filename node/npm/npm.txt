@@ -1,0 +1,8 @@
+
+npm list
+npm audit --json
+npm audit fix
+npm audit fix --force 
+npm install webpack@latest
+
+npm install webpack-dev-server

@@ -1,0 +1,30 @@
+*Exponiendo contenedores*
+
+Corro un nginx:
+👉 docker run -d --name proxy nginx
+
+Apaga el contenedor:
+👉 docker stop proxy
+
+Borro el contenedor:
+👉 docker rm proxy
+
+Parar y borrar un contenedor al mismo tiempo: 
+👉 docker rm -f <contenedor>
+
+Correr un nginx y exponer el puerto 80 del contenedor en el puerto 8080 de mi máquina:
+👉 docker run --name proxy -p 8080:80 nginx
+Desde mi navegador compruebo que funciona ingresando a http://localhost:8080/
+
+Elimino el contendor:
+👉 docker rm proxy
+Correr un nginx y exponer el puerto 80 del contenedor en el puerto 8080 de mi máquina, pero con `-d`:
+👉 docker run --name proxy -d -p 8080:80 nginx
+
+Ver los `logs` de mi contenedor `proxy`:
+👉 docker logs proxy
+
+Ver los `logs` de mi contenedor `proxy`, y a la vez hago un `follow` de los logs:
+👉 docker logs -f proxy
+Veo y sigo solo las 10 últimas entradas del log:
+👉 docker logs --tail 10 -f proxy

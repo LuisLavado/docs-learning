@@ -1,0 +1,51 @@
+**Imágenes**
+
+*1) Conceptos fundamentales de Docker: imágenes*
+Las Imágenes son `Plantillas` apartir de las cuales vamos a crear contenedores nuevos.
+
+Imágen Una imágen contiene distintas capas de datos (distribución, diferente software, librerías y personalización). . Podemos llegar a la conslusión, que una imágen se conforma de distintas capas de personalización, en base a una capa inicial (base image), la dicha capa, es el más puro estado del SO. . La siguiente ilustración nos mostraría la representación gráfica, del concepto de una imágen en Docker.
+
+./imagenes.webp
+
+
+Si observamos, partimos desde la base del SO, y vamos agregando capas de personalización hasta obtener la imágen que necesitamos:
+
+1. distribución debian
+2. se agrega el editor emacs
+3. se agrega el servidor Apache
+4. se agregan los permisos de escritura para la carpeta /var/www de Apache
+Hay que tener en cuenta, que todo parte del Kernel de Linux, en caso de utilizar alguna distrubución de Linux .
+
+Historico de una imágen Podemos observar la historia de nuestra imágen, con el siguiente comando
+👉 docker history [imagen]
+De esta manera podemos ver las capas de personalización que fuerón agregadas, para la construcción de la imágen que conocemos.
+
+Listar todas las imagenes que tengo localmente:
+👉 docker image ls
+ó:
+👉 docker images
+
+Descargar desde DockerHub
+👉 docker pull <image_name>:<tag_version>
+Bajo la imagen de ubuntu con una versión específica:
+👉 docker pull ubuntu:20.04
+
+Para eliminar una imagen
+👉 docker image rm -f {id_image}
+yo tenía como 15 imagenes que tenia de cosas anteriores, para borrar imagenes puedes hacer un:
+👉 docker image prune -a
+
+*2) Construyendo una imagen propia*
+$ mkdir imagenes (creo un directorio en mi máquina) $ cd imagenes (entro al directorio) $ touch Dockerfile (creo un Dockerfile) $ code . (abro code en el direcotrio en el que estoy)
+
+##Contenido del Dockerfile## FROM ubuntu:latest RUN touch /ust/src/hola-platzi.txt (comando a ejecutar en tiempo de build) ##fin##
+
+$ docker build -t ubuntu:platzi . (creo una imagen con el contexto de build <directorio>) $ docker run -it ubuntu:platzi (corro el contenedor con la nueva imagen) $ docker login (me logueo en docker hub) $ docker tag ubuntu:platzi miusuario/ubuntu:platzy (cambio el tag para poder subirla a mi docker hub) $ docker push miusuario/ubuntu:platzi (publico la imagen a mi docker hub)
+
+buenas, la linea del RUN esta mal la ruta, debe de ser /usr/src/hola-platzi.txt, gracias por el resumen
+
+
+*3) Conceptos fundamentales de Docker: imágenes*
+
+
+

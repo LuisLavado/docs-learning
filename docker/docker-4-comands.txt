@@ -1,0 +1,113 @@
+**Datos en Docker**
+
+*1) Bind mounts*
+Creo una directorio en mi máquina
+👉 mkdir dockerdata
+Ingreso al directorio:
+👉 cd dockerdata
+👉 ls -lac
+
+Vamos a crear un contenedor para una base de datos `Mongo`
+👉 docker run -d --name db mongo
+
+Veo los contenedores activos:
+👉 docker ps
+
+Entro al bash del contenedor:
+👉 docker exec -it db bash
+
+Me conecto a la BBDD:
+👉 mongo
+A partir de mongo 6.0 ya no se usa "mongo" sino "mongosh":
+👉 mongosh
+
+Dentro de `mongosh`,
+listo las BBDD:
+👉 shows dbs
+creo la BBDD `myblog`:
+👉 use myblog
+inserto un nuevo dato:
+👉 db.users.insert({"nombre":"Luis Lavado"})
+veo el dato que cargué:
+👉 db.users.find()
+Salgo de `mongo`:
+👉 exit
+Salgo de contendor:
+👉 exit
+
+Mato el contendor:
+👉 docker rm -f db
+
+Corro un contenedor de mongo y creo un `Bind mount`:
+_1) Creo una carpeta `mongodata`
+👉 mkdir mongodata
+_2) Obtenemos el directorio en donde estamos ubicados:
+👉 pwd
+Corro un contenedor de mongo y creo un `Bind mount`:
+👉 docker run -d --name db -v <path de mi maquina>:<path dentro del contenedor(/data/db)> mongo
+👉 docker run -d --name db -v /var/www/devlearning-docker/dockerdata/mongodata:/data/db mongo
+
+Corro un contenedor de mongo y creo un `Bind mount` (Windows):
+👉 docker run -d --name db -v D:/LEARNING/learning-docker/dockerdata/mongodata:/data/db mongo
+
+Dar permisos a la carpeta:
+👉 sudo chmod -R 777 /var/www/devlearning-docker/dockerdata/mongodata
+
+Corro un contenedor de mongo y creo un `Bind mount` (alternativa Linux):
+👉 docker run -d --name db -v $(pwd)/dockerdata/mongodata:/data/db mongo
+
+
+*2) Volúmenes*
+Listar los volumes:
+👉 docker volume ls
+
+Crear un volumen:
+👉 docker volume create dbdata
+
+Corro la BBDD y monto el volumen:
+👉 docker run -d --name db --mount src=dbdata,dst=/data/db mongo
+
+Ver la información detallada del contenedor:
+👉 docker inspect db
+
+Me conecto a la BBDD:
+👉 mongosh
+
+Dentro de `mongosh`,
+listo las BBDD:
+👉 shows dbs
+creo la BBDD `myblog`:
+👉 use myblog
+inserto un nuevo dato:
+👉 db.users.insert({"nombre":"Luis Lavado"})
+veo el dato que cargué:
+👉 db.users.find()
+Salgo de `mongo`:
+👉 exit
+Salgo de contendor:
+👉 exit
+
+
+*3) Insertar y extraer archivos de un contenedor*
+Creo un archivo en mi máquina:
+👉 touch prueba.txt
+
+Corro un ubuntu y le agrego el tail para que quede activo:
+👉 docker run -d --name copytest ubuntu tail -f /dev/null
+
+Entro al contenedor:
+👉 docker exec -it copytest bash
+
+Creo un directorio en el contenedor:
+👉 mkdir testing
+
+Salgo del contenedor:
+👉 exit
+
+Copio el archivo `prueba.txt` dentro del contenedor con el nombre de `test.txt`:
+👉 docker cp prueba.txt copytest:/testing/test.txt
+
+Copio el directorio de un contenedor a mi máquina, con "docker cp" no hace falta que el contenedor esté corriendo:
+👉 docker cp copytest:/testing localtesting
+
+
