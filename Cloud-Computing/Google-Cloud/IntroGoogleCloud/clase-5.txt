@@ -1,0 +1,44 @@
+Era de las maquinas virtuales (VM): Empieza la nube, las startups se dan cuenta que no es necesario comprar toda la infraestructura, que hasta ese entonces era necesaria y que podían aprovechar la "nube"
+
+Era de la infraestructura en la nube: Muchas empresas tradicionales se dan cuenta del potencial de la nube
+
+++La nube transformacional:++
+
+La nube mas limpia / Sustentabilidad.
+Te ahorra dinero.
+Fácil de usar y se optimiza automáticamente.
+Soluciones de industria a la medida.
+
+Eras del computo en la nube
+
+Eras de las VM
+Era de la infraestructura en la nube
+Era de la nube transformacional
+Que requiere la industria el dia de hoy
+Como podeos actuar de manera mucho mas inteligente
+Como nos transformamos mientras mantenemos la libertad de adaptarnos
+Como conectamos a las personas de mejor manera
+Como nos protegemos
+La nube de datos
+adopta el ciclo de vida completo de los datos
+democratiza el acceso a los daos para impulsar los resultados
+las soluciones de inteligencia artificial lideres ayudan a las empresas a redecir y automatizar
+La nube abierta
+Aprovecha la flexibilidad y la innovacion de ser open source
+Disfruta de la libertad de un entorno multinube para crear y ejecutar aplicaciones desde cualquier lugar
+aprovecha las soluciones de nuestro ecosistema de socios para ampliar tus opciones tecnologicas
+La nube colaborativa
+Entorno de trabajo reinventado
+Nuevas formas de fortalecer las conexiones humanas
+Ayuda a las empresas a conectarse con clientes y socios
+La nube de confianza
+Una plataforma segura que brinda transparencia y habilita la soberania
+Una arquitectura probada de Confianza cero
+Destino compartido, no responsabilidad compartida
+La nube transformacional
+
+La nube mas limpia / Sustentabilidad
+te ahorra dinero
+Facil de usar y se optimiza automaticamente
+Soluciones de industria a la medida
+Arquitecturas de Computo en GCP

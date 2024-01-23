@@ -1,0 +1,27 @@
+Hola, estoy muy emocionado de que inicies tu aprendizaje en Google Cloud Platform con esta increíble ruta que Google y Platzi hemos preparado para ti. Por ello queremos darte unos créditos especiales para que puedas utilizar los diferentes servicios de Google Cloud.
+
+Para canjear tus créditos accede a este link y sigue las instrucciones.
+
+Ojo: el link tiene una fecha de vencimiento. Si por esta razón no alcanzas a canjear tus créditos con Qwiklabs, aún puedes obtener créditos gratuitos con solo crear tu cuenta de Google Cloud y vincular un método de pago.
+
+Adicionalmente, en ese link de Qwiklabs encontrarás laboratorios especiales para que puedas practicar lo que vayas aprendiendo en esta ruta de Google Cloud Platform.
+
+Espero lleves tu aprendizaje al máximo y disfrutes de los beneficios de la nube de Google tanto como yo. ¡Éxito!
+
+https://www.cloudskillsboost.google/course_templates/648?qlcampaign=4l-googlehostedmarketing-37
+
+Hola para lo que no puedan obtener los créditos del enlace en esta página les dejo este enlace funciona por 30 días, es un skills challenge .
+
+https://inthecloud.withgoogle.com/google-cloud-skills
+
+Si no les funciona prueben esta solución.
+
+We recommend you to please follow the below steps in order to get the benefits of this code
+
+Open incognito window on your browser. (CTRL/CMD+SHIFT+N).
+Go to this link ( https://www.cloudskillsboost.google/catalog?keywords=GSP282&event=Your ) and put your unique access code: ################# in the popup asking for access code.
+Now, sign in to your Qwiklabs account.
+Now, if you click the profile icon on the top right corner, you can see now that you have 9 credits to get started.
+Once you have the 9 credits, click on the Enroll on this on-demand quest, click on the "A Tour of Qwiklabs and Google Cloud" and then click on the green "Start Lab".
+Now follow the steps given in the lab & complete it. (Spend atleast 5 minutes in the lab) Once you finish this lab, click on the "End Lab" button, you will automatically get a one month free pass credited to your account.
+To check for the subscription you have received, please visit this link (https://www.cloudskillsboost.google/my_account/credits) .

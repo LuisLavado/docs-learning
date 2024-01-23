@@ -1,0 +1,7 @@
+++Características del computo en la nube:++
+
+Cómputo de auto servicio y bajo demanda.
+Conectado a la red (puedes acceder desde donde sea).
+Economías de escala (El proveedor comparte los recursos entre todos los clientes).
+Elasticidad (el cliente puede obtener recursos o disminuirlos según lo requiera de forma muy rápida).
+Servicio medido (se paga lo que se consume).

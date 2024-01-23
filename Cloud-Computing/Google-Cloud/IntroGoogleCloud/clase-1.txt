@@ -1,0 +1,9 @@
+Google Cloud Platform se trata de la suite de infraestructuras y servicios que Google utiliza a nivel interno y, también está disponible para cualquier empresa o usuario, de tal forma que sea aplicable a multitud de procesos empresariales.
+
+Google Cloud Platform, nos ofrece herramientas que podemos dividir en 3 grupos, según el tipo de servicio:
+
+- Infraestructura como servicio (IaaS)
+
+- Plataforma como servicio (PaaS)
+
+- Software como servicio (SaaS)
