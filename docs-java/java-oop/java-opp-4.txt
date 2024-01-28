@@ -15,4 +15,15 @@ public class Doctor {
     // un nuevo objeto con la clase Doctor...
   }
 }
+
 El método constructor no debe regresar ningún valor (no necesitamos un return). Más adelante estudiaremos un poco más a fondo cómo funcionan la sobrecarga de métodos y sobrecarga de constructores.
+
+Accesando a Métodos
+Doctor myDoctor = new Doctor();
+myDoctor.showName();
+
+Math.random();
+Math.sqrt(25);
+Math.PI;
+
+

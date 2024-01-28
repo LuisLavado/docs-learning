@@ -1,0 +1,56 @@
+**Arrays**
+Los arreglos o arrays son objetos en los que podemos guardar más de una variable, una lista de elementos. Los arrays son de una sola dimensión, pero si guardamos arrays dentro de otros arrays podemos obtener arrays multidimensionales.
+
+Los arrays se definen en código de las siguientes maneras:
+
+// 1. Definir el nombre de la variable y el tipo de datos
+//  que va a contener, cualquiera de las siguientes dos
+// opciones es válida:
+TipoDato[] nombreVariable;
+TipoDato nombreVariable[];
+
+// 2. Definir el tamaño del array, la cantidad de elementos
+// que podemos guardar en el array:
+TipoDato[] nombreVariable = new TipoDato[capacidad];
+
+// Array de dos dimensiones:
+TipoDato[][] cities = new String[númeroFilas][númeroColumnas];
+Ya que los arrays pueden guardar multiples elementos, la convención es escribir los nombres de las variables en plural.
+
+**Declarando Arreglos**
+En Java existe una clase algunas veces llamada como clase cósmica o super clase llama Object de la cuál todas las clases heredan, por lo que se podrían realizar lo siguiente:
+
+
+        Object [] objts = new Object[3];
+        objts[0] = "test";
+        objts[1] = 10;
+        objts[2] = true;
+
+        for (int i = 0; i < objts.length; i++) {
+            System.out.println(objts[i]);
+        }
+con esto se obtendría la siguiente salida debido a que ejecuta el método toString:
+
+test 10 true
+
+Hay que recordar que Java es un lenguaje fuertemente tipado, por lo que es posible realizar el siguiente casteo:
+
+
+Object [] objts = new Object[3];
+        objts[0] = "test";
+        objts[1] = 10;
+        objts[2] = true;
+
+        for (int i = 0; i < objts.length; i++) {
+            Object obj = objts[i];
+            if(obj instanceof Integer) {
+                int numero = (int) obj;
+                System.out.println("Es número: " + obj);
+            } else if(obj instanceof String) {
+                String texto = (String) obj;
+                System.out.println("Es texto: " + texto);
+            } else if(obj instanceof Boolean) {
+                boolean condicion = (boolean) obj;
+                System.out.println("Es boolean: " + condicion);
+            }
+        }

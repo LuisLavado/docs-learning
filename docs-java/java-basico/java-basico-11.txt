@@ -1,0 +1,23 @@
+Los archivos JAR (Java Archive) son archivos de Java con el código compilado de los archivos .class y comprimido con el formato ZIP para que más adelante sean interpretados y ejecutados por la máquina virtual de Java (JVM).
+
+Para generar estos archivos podemos entrar a File > Project Structure > Artifacts y seleccionar la opción de JAR > From modules with dependencies. Luego de esto podemos compilar nuestro proyecto desde Build > Build Artifacts > Build y podremos nuestros archivos ejecutables en la carpeta out/artifacts/.
+
+Los pasos que me funcionaron para cambiar la versión de java en Windows 10 fueron:
+
+Ubicas la ruta de instalación del Open JDK y entras a la carpeta bin (Recordemos que estamos usando OpenJDK); En teoría esta en C:\Program Files\AdoptOpenJDK\jdk-8.0.232.09-hotspot\bin
+
+Copia la ruta completa queda algo asi: C:\Program Files\AdoptOpenJDK\jdk-8.0.232.09-hotspot\bin
+
+luego en el cuadro de búsqueda de Windows 10 (ubicado en la parte inferior izquierda) buscas “ver la configuración avanzada del sistema”
+
+Posteriormente se abre un cuadro; entras; en la pestaña “opciones avanzadas” parte inferior encuentras el botón “Variables de entorno” entras hay, te aparece dos cuadros (te fijas en el inferior que se denomina Variables del sistema)
+
+Ubicas la variable “Path” y le das en editar.
+
+Si instalaste las dos versiones del JDK deberían aparecerte las dos así: C:\Program Files\AdoptOpenJDK\jdk-8.0.232.09-hotspot\bin C:\Program Files\AdoptOpenJDK\jdk-11.0.5.10-hotspot\bin
+
+(Si no te aparecen debes incluir las rutas como se indica en el paso numero 1. picando en “Nuevo” y hay colocas las dos rutas de las dos versiones de los JDK instalados en el curso.)
+
+Oprimes subir o bajar según la versión que quieras usar (es decir que la versión que deseas usar este de primero); en el lado derecho están los botones de subir y bajar.
+
+abres una consola y revisas la versión con (java -versión) o (javac – versión)

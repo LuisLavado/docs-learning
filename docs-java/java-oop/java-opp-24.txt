@@ -1,0 +1,7 @@
+Don't repeat yourself
+The DRY Principle Explained: Its Benefit and Cost with Examples
+Lesson 1. Intro to DRY code
+Is Your Code DRY or WET?
+Stop trying to be so DRY, instead Write Everything Twice (WET)
+SOLID Principles-simple and easy explanation
+DESIGN PATTERNS: DON’T REPEAT YOURSELF – VIDEO AND RESOURCES

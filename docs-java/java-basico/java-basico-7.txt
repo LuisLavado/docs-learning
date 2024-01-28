@@ -1,0 +1,25 @@
+**Convención de Nombres en Java**
+
+Una convención de nombres es un patrón que deben seguir los nombres de las variables para que el código esté organizado, entendible y sin repetidos.
+
+Java es sensible a mayúsculas y minúsculas, este punto es clave al seguir una convención.
+
+Las variables siempre deben comenzar con un simbolo de letra, $ o _.
+
+No puedes usar el simbolo - en ninguna parte de la variable.
+
+Las variables constantes son variables cuyo valor nunca va a cambiar, por lo que se deben escribir completamente en mayúsculas y usando el caracter _.
+
+En las clases: La primera letra ira en mayúscula. Si esta formada por más de una palabra, la primera letra de la palabra estará en mayúscula. Si está clase contiene un main, haciendo que sea ejecutable, incluiremos al final App. Si no tiene, no se incluye. Ejemplo: SalarioEmpleadoApp 
+En los métodos o funciones: La primera letra ira en minúscula. Si esta formada por más de una palabra, la primera letra de la palabra estará en mayúscula. Ejemplo: calculaSueldo 
+En las constantes: Todas las letras irán en mayúsculas. No pueden comenzar por números. Ejemplo: IVA En las variables: La primera letra ira en minúscula. Si esta formada por más de una palabra, la primera letra de la palabra estará en mayúscula. También se pueden usar separadores como guiones bajos. No pueden comenzar por números. Ejemplo: sueldoEmpleado o sueldo_empleado En las interfaces: La primera letra ira en mayúscula. Si esta formada por más de una palabra, la primera letra de la palabra estará en mayúscula. Normalmente, suelen acabar en -able.
+
+**Técnica de Naming: Camel Case**
+Camel Case es una convención muy popular para nombrar nuestras variables. Podemos usarlo en modo Upper Camel Case o Lower Camel Case, la diferencia es si comenzamos el nombre de la variable con mayúscula o minúscula.
+
+// Upper Camel Case:
+class SoyUnaClase {};
+
+// Lower Camel Case
+int soyUnNumeroInt = 10;
+Debemos usar Upper Camel Case en los nombres de las clases y archivos. Y Lower Camel Case en los nombres de las variables o métodos.

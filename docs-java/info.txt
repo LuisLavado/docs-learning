@@ -2,6 +2,8 @@ intro-a-java-se => Curso de Introducción a Java SE: https://platzi.com/cursos/j
 
 java-oop => Curso de Java SE Orientado a Objetos: https://platzi.com/cursos/java-oop/
 
+java-funcional => Curso de Programación Funcional con Java SE: https://platzi.com/cursos/java-funcional/
+
 docker-kubernetes-con-spring-boot => Guía Completa de Docker & Kubernetes con Spring Boot 2023: https://www.udemy.com/course/guia-completa-de-docker-kubernetes-con-spring-boot/
 
 

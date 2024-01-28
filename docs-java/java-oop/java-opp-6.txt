@@ -1,4 +1,27 @@
 **Final: Variables Constantes**
+En Java, las constantes son variables cuyos valores no pueden ser modificados una vez que se les ha asignado un valor inicial. Para declarar una constante en Java, generalmente se utiliza la palabra clave final. Aquí te dejo un ejemplo simple:
+
+public class ConstantesEjemplo {
+    // Declaración de una constante entera
+    public static final int NUMERO_MAXIMO = 100;
+
+    // Declaración de una constante de tipo cadena (String)
+    public static final String MENSAJE_BIENVENIDA = "¡Hola, bienvenido!";
+
+    public static void main(String[] args) {
+        // Accediendo a las constantes desde el método main
+        System.out.println("Número máximo permitido: " + NUMERO_MAXIMO);
+        System.out.println("Mensaje de bienvenida: " + MENSAJE_BIENVENIDA);
+    }
+}
+
+En este ejemplo, NUMERO_MAXIMO y MENSAJE_BIENVENIDA son constantes. Al usar la palabra clave final, se indica que estos valores no deben ser modificados después de su asignación.
+
+Es una convención en Java nombrar las constantes en mayúsculas con palabras separadas por guiones bajos (snake_case). Esto mejora la legibilidad del código y ayuda a distinguir las constantes de otras variables.
+
+Es importante destacar que, aunque las constantes no se pueden modificar después de su inicialización, el modificador final no hace que los objetos a los que se hace referencia sean inmutables. En otras palabras, si declaras una constante de tipo objeto, como una instancia de una clase, los atributos de ese objeto aún pueden ser modificados. El modificador final se aplica solo a la referencia del objeto, no al contenido del objeto en sí.
+
+
 **Sobrecarga de métodos y constructores**
 
 A veces necesitamos que dos o más métodos de una misma clase tengan el mismo nombre, pero con diferentes argumentos o distintos tipos de argumentos/valores de retorno.
@@ -22,6 +45,7 @@ public class Calculadora {
     return a + b;
   }
 }
+
 El uso más común de la sobrecarga de métodos es la sobrecarga de constructores para instanciar objetos de formas distintas dependiendo de la cantidad de argumentos que enviamos.
 
 public class Doctor {

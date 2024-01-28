@@ -1,0 +1,30 @@
+**Interfaces en Java 8 y 9**
+
+Las Interfaces nos permiten usar métodos abstractos y campos constantes para implementar herencia/polimorfismo de forma muy similar a las clases abstractas.
+
+A partir de Java 8 podemos tener implementación en métodos para heredar y reutilizar diferentes comportamientos. No todos los métodos de nuestras interfaces deben ser abstractos, ahora podemos usar el modificador de acceso default y desde Java 9 también private.
+
+Recuerda que el nivel de acceso de default y private son los mismos que estudiamos en clases anteriores.
+
+public interface MyInterface {
+  // Métodos default: nos permite heredar la definición
+  // de la función y también su implementación...
+  default void defaultMethod() {
+    privateMethod("Hello from the default method!");
+  }
+
+  // Métodos private: nos permiten definir comportamiento,
+  // pero solo se puede usar desde otras clases de esta
+  // interfaz, no se hereda a la clase hija....
+  private void privateMethod(final String message) {
+    System.out.println(message);
+  }
+
+  // Métodos abstractos: recuerda que todos los métodos
+  // son abstractos por defecto...
+  void normalMethod();
+}
+
+
+
+

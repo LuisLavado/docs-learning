@@ -1,0 +1,3 @@
+¡Felicitaciones por terminar el Curso de Introducción a Java SE!
+
+El objetivo de este curso es comprender el lenguaje: los fundamentos de Java, cómo declarar variables, métodos y estructuras de datos básicas, cómo funcionan las diferentes versiones de Java, qué son los JDK o JVM, entre muchas otras cosas.

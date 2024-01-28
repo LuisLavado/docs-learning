@@ -1,88 +1,11 @@
-**Etapas de la programación en Java**
+**Las herramientas más usadas de Java**
 
-1. Escribir nuestros archivos .java.
-2. Compilar, cargar y verificar nuestros archivos con javac (los IDEs nos permiten compilar con solo presionar un botón).
-3. Al compilar obtenemos archivos .class con código que nuestras computadoras pueden entender (Byte Code).
-4. La JVM (Java Virtual Machine) se encarga de ejecutar el código de forma que funcione en cualquier dispositivo o sistema operativo.
+Java 8 (LTS) es la versión más usada de Java hasta inicios del 2019, pero solo tendrá soporte hasta diciembre del 2020, luego de esta fecha tendremos que pagar una licencia para continuar con su soporte.
 
-Java es un lenguaje compilado e interpretado al mismo tiempo.
+Java 10 introdujo algunos cambios en la forma de declarar variables, así que en este curso vamos a trabajar con las versiones 8 y 11 de Java.
 
-**La JShell de Java**
+La herramienta más usada para construir proyectos web con Java es Maven, pero también existen otras alternativas como Gradle. También existen frameworks como Spring para trabajar con Java EE y ORMs como Hibernate para trabajar con bases de datos.
 
-Sabías que Java tiene una herramienta interactiva en dónde puedes ir probando segmentos de código en vez de realizar todo el proceso de creación de un programa en Java. Escribir, compilar y correr.
+Los IDEs son entornos de desarrollo integrados, herramientas (aplicaciones, seguramente de escritorio) que nos ayudan a escribir nuestro código con editores, compiladores, depuradores y constructores de interfaces gráficas, todo en un mismo lugar.
 
-Su nombre es jshell y está disponible desde la versión 9 de Java.
-
-Abre tu consola de comandos o terminal, corre el siguiente comando:
-
-$ java -version
-
-Ejercicio 1.
-Investiga cómo cambiar la versión de Java desde tu consola de comandos o terminal y compártenos en la sección de discusiones los comandos que ejecutaste.
-
-Respuesta:
-Primero busqué la ruta donde se encuentran las versiones. Cuando se descarga, automáticamente se guardan en esta ruta: `C:\Program Files\Eclipse Adoptium` y selecciono la que quiero, en mi caso, la 11.
-
-$ set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot
-$ set PATH=%JAVA_HOME%\bin;%PATH%
-
-Nota: Para regresar a la versión inicial introduzco los mismo comandos, pero con la ruta de la version anterior
-
-Ejercicio 2.
-Asegurate de tener definida una versión superior a la 8.
-Ahora desde tu terminal escribe el siguiente comando para abrir nuestra jshell
-
-$ jshell
-
-Ahora escribe la línea de código para imprimir un texto (no olvides poner ; y dar enter).
-
-
-**Variables**
-Una variable es un espacio de memoria (RAM) que contiene un dato de tipo numérico, booleano, de texto u otros tipos de datos un poco más complejos.
-
-Las variables en Java se componen de un nombre único y un valor que puede cambiar a lo largo de la ejecución del programa. Al declarar las variables debemos definir el tipo de dato que vamos a usar y un punto y coma al final:
-
-// Variables.java
-
-public class Variables {
-  public static void main(String[] args) {
-    // Declarar la variable speed de tipo int (números enteros)
-    int spped;
-
-    // Actualizar el contenido de la variable speed:
-    spped = 10; // si ya habías declarado la variable
-
-    // Declarar una variable y asignarle un valor al mismo tiempo:
-    int salary = 1000;
-
-    // Crear una variable de tipo String:
-    String eployeeName = "Anahí Salgado";
-  }
-}
-
-**Actualizando variables**
-Java nos permite actualizar nuestras variables reutilizando los valores que tenían anteriormente, de esta forma evitamos errores o inconsistencias en nuestro código:
-
-public class UpdatingVariable {
-  public static void main(String[] args) {
-    // Actualizar datos numéricos:
-    int salary = 1000;
-    salary = salary + 200;
-    System.out.println(salary); // 1200
-
-    salary += 300;
-    System.out.println(salary); // 1500
-
-    // Actualizar variables de tipo String:
-    String employeeName = "Anahí";
-    employeeName = employeeName + "Salgado";
-    System.out.println(salary); // Anahí Salgado
-
-    employeeName += "Díaz de la Vega";
-    System.out.println(employeeName); // Anahí Salgado Díaz de la Vega
-
-    employeeName = "Irene" + employeeName;
-    System.out.println(employeeName); // Irene Anahí Salgado Díaz de la Vega
-  }
-}
-
+El IDE recomendado por Oracle es NetBeans, pero también están Eclipse e IntelliJ IDEA, este último es el que más fuerza ha tomado gracias a Kotlin. Las tres herramientas son gratuitas, pero IntelliJ IDEA también tiene una versión de pago.

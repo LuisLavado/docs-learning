@@ -16,22 +16,22 @@ public class Doctor {
     // Instrucciones...
   }
 }
-Declarar un Objeto:
 
+Declarar un Objeto:
 // Tipo de Objeto ---- Nombre del Objeto
 Doctor myDoctor;
 
 // Otro objeto del mismo tipo Doctor:
 Doctor anotherDoctor;
-Instanciar un Objeto:
 
+Instanciar un Objeto:
 // Nombre del Objeto ---- Clase base para crear algún tipo de objetos
 myDoctor = new Doctor();
 
 // Otro objeto
 anotherDoctor = new Doctor();
-Declarar e instanciar un objeto en la misma línea:
 
+Declarar e instanciar un objeto en la misma línea:
 // Declarar el objeto ---- Instanciar el objeto
 Doctor myDoctor = new Doctor();
 Utilizar el objeto:

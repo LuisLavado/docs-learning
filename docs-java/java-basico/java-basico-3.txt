@@ -1,0 +1,50 @@
+**Creando un entorno de desarrollo en Java en Windows**
+OpenJDK: https://adoptium.net/es/
+IntelliJ IDEA: https://www.jetbrains.com/idea/
+IntelliJ IDEA for Windows: https://www.jetbrains.com/idea/download/?section=windows
+
+**Creando un entorno de desarrollo en Java en Mac**
+
+**Creando un entorno de desarrollo en Java en Linux**
+Si tu eres usuario de Linux, a continuación aprenderemos a instalar Java OpenJDK en la versión Ubuntu.
+
+Abre tu terminal de la siguiente forma
+Selecciona el que dice: Terminal
+
+Nota: A partir de ahora necesitarás tu contraseña de usuario root
+
+Una vez abierta comenzaremos actualizando los paquetes del sistema para evitar cualquier error con los siguientes comandos:
+
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
+
+Esto puede demorar un poco.
+
+Empecemos instalando OpenJDK 8
+Simplemente corre el siguiente comando:
+
+$ sudo apt-get install openjdk-8-jre
+Listo te pediará algunas confirmaciones, responde S y a partir de ese momento quedará instalado.
+
+Ahora pasemos a OpenJDK 11
+Como es una versión nueva debemos añadir un repositorio para poder descargar el paquete de ahí mismo. Lo hacemos de la siguiente forma:
+
+$ sudo add-apt-repository ppa:openjdk-r/ppa
+Actualiza con el siguiente comando:
+
+$ sudo apt update
+Ahora sí ya podemos descargar el paquete de la siguiente forma:
+
+$ sudo apt install openjdk-11-jdk
+Cambia la versión de Java que desees en ese momento
+Verifica la versión de Java que tienes instalada
+
+$ java -version
+Para cambiarla escribe el siguiente comando
+
+$ sudo update-alternatives --config java
+
+./java-en-linux.webp
+
+Solo como confirmación vuelve a revisar la versión para verificar que se haya cambiado.

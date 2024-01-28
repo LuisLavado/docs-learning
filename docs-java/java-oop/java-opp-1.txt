@@ -6,15 +6,16 @@ La Programación Orientada a Objetos (POO) nos ayuda a analizar y entender todos
 
 Este paradigma se compone de 4 elementos (que analizaremos a fondo más adelante):
 
-Clases
-Propiedades
-Métodos
-Objetos
+* Clases
+* Propiedades
+* Métodos
+* Objetos
+
 Además, se basa en los siguientes 4 pilares:
 
-Encapsulamiento
-Abstracción
-Herencia
-Polimorfismo
+* Encapsulamiento
+* Abstracción
+* Herencia
+* Polimorfismo
 
 Recuerda que antes de tomar este curso es muy recomendado que tomes el Curso de Introducción a Java SE y el Curso de Programación Orientada a Objetos: POO. Al terminar este curso puedes continuar con el Curso de Java SE: Programación Funcional.

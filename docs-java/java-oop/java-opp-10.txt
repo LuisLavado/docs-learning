@@ -1,3 +1,6 @@
+**ArrayList: colección**
+Una colección es una especie de arrays de tamaño dinámico, lo que almacena realmente es un conjunto de objetos (Clases Wrapper, ver tema anterior) y utiliza el paquete java.util. Hay varios tipos de colecciones, pero aquí en el video se usa únicamente la colección de tipo list, y a su vez, un list tiene 3 tipos de constructores, pero únicamente se utiliza el constructor ArrayList.
+
 **Clases Anidadas**
 
 Las Clases Anidadas o Clases Helper son clases dentro de otras clases que agrupamos por su lógica y/o características en común.

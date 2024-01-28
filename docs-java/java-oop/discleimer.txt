@@ -1,0 +1,42 @@
+Lo nuevo que puede aprender de Java en éste `Curso de Java SE Orientado a Objetos` son las `Clases Anidadas` o `Clases Helper` (nunca las usé antes), son clases dentro de otras clases que agrupamos por su lógica y/o características en común.
+
+Podemos encontrar clases estáticas anidadas, clases internas que son locales a un método o clases internas anónimas. Las clases anidadas pueden llamar a cualquier tipo de elemento o método de nuestras clases.
+
+Otra cosa que encontré es el uso de los modificador de acceso default y private en los métodos de un `interface`:
+
+public interface MyInterface {
+  // Métodos default: nos permite heredar la definición
+  // de la función y también su implementación...
+  default void defaultMethod() {
+    privateMethod("Hello from the default method!");
+  }
+
+  // Métodos private: nos permiten definir comportamiento,
+  // pero solo se puede usar desde otras clases de esta
+  // interfaz, no se hereda a la clase hija....
+  private void privateMethod(final String message) {
+    System.out.println(message);
+  }
+
+  // Métodos abstractos: recuerda que todos los métodos
+  // son abstractos por defecto...
+  void normalMethod();
+}
+
+
+Y por último la herencia entre `interfaces` (utilizando la palabra clave extends), aquí sí es permitido la herencia múltiple, además siguiendo las implementaciones de métodos default y private de las versiones Java 8 y 9 respectivamente podemos sobreescribir métodos y añadirles comportamiento, si es el caso:
+
+public interface IReadable {
+	public void read();
+}
+
+public interface Visualizable extends IReadable, Serializable {
+	public void setViewed();
+	public Boolean isViewed();
+	public String timeViewed();
+	
+    @Override
+    default void read() {
+        // TODO Auto-generated method stub
+    }
+}

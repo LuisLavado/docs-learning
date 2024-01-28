@@ -1,0 +1,38 @@
+**¿Qué es una función en Java?**
+
+En la programación funcional, una función es un tipo de dato que a partir de un dato de entrada $x$, puede efectuar alguna operación y devolver un dato $y$.
+
+Otra definición posible es que una función es una serie específica de pasos o instrucciones que puede o no devolver un resultado (no devolver un resultado no implica que no se haya hecho algo útil dentro de la misma).
+
+En cualquier caso, una o más funciones pueden ser definidas en cualquier momento y almacenarse para utilizarlas más de una vez sin reescribirla.
+
+Un ejemplo de función podría ser $f(x) = x^2 * 5$, que en Java puede escribirse como:
+
+public double f(double x) {
+    return Math.pow(x, 2) + 5;
+}
+
+También es posible definir funciones que hacen uso de otras funciones, por ejemplo $esImpar(x) = !esPar(x)$
+
+public int esPar(int x) {
+    return x % 2 == 0;
+}
+
+public int esImpar(int x) {
+    return !esPar(x);
+}
+
+
+Existen casos donde una función se utiliza a si misma como un paso en la resolución del problema, esto se llama recursión (la función es recursiva).
+
+$$ \begin{align*} fact(x) =& 1 \iff x \lt 2 \ & x * fact(x - 1) \iff x \ge 2 \ \end{align*} $$
+
+public int factorial(int x) {
+    if (x < 2) return 1;
+    return x * factorial(x - 1);
+}
+
+
+Dado que por su definición las funciones son un tipo de dato, es posible tener una función que reciba otra función como uno de sus parámetros.
+
+$$ \begin{align*} g(x) &= x - 2 \ f(x, g(x)) &= x^2 + g(x) \ \end{align*} $$
