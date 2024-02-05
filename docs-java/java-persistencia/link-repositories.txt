@@ -1,0 +1,8 @@
+Curso:
+https://github.com/santiaguf/gatos_app
+https://github.com/santiaguf/red_social/tree/master
+https://www.tutorialspoint.com/what-are-the-different-types-of-joptionpane-dialogs-in-java
+
+
+Estudiantes:
+https://github.com/CrissUD/JavaFrontendAsincrono

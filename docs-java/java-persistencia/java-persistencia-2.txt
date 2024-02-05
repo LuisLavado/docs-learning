@@ -1,0 +1,13 @@
+**Creación del proyecto en Java**
+mensajes_app
+
+**Conexión a MySQL desde Java**
+**Control de versiones con Git y GitLab**
+**Flujo y lógica de la aplicación**
+**CRUD: inserción de datos**
+**CRUD: lectura de datos**
+**CRUD: eliminación de datos**
+**CRUD: actualización de datos**
+
+
+

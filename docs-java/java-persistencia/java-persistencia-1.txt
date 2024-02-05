@@ -1,0 +1,26 @@
+**¿Cómo empezar? Persistencia de datos y bases de datos relacionales**
+**Conociendo algunas bases de datos relacionales: MySQL, PostgreSQL, Oracle**
+**Instalación de MySQL**
+Xampp es un paquete que contiene varias herramientas para crear aplicaciones web: un servidor web apache, la base de datos MySQL, PHPMyAdmin y PHP.
+
+En nuestro proyecto vamos a usar MySQL como base de datos relacional y apache junto con phpmyadmin para gestionar nuestra base de datos desde una interfaz web.
+
+Para instalarlo vamos al sitio web y seleccionamos el instalador de acuerdo a nuestro sistema operativo.
+
+Instalación de MySQL
+Para instalar nuestra base de datos utilizaremos un gestor llamado XAMPP, un software que contiene empaquetado el servidor web apache, mysql como base de datos, php como lenguaje de backend y proftpD como servidor ftp. En nuestro caso, solo necesitamos usar mysql como base de datos y apache para gestionar nuestra base de datos desde la herramienta web PhpMyAdmin.
+
+**Diseñando nuestra base de datos**
+Flowchart Maker & Online Diagram Software => https://app.diagrams.net/
+
+**Creando nuestra base de datos usando DDL**
+create table mensajes_app.mensajes( 
+    ID_MENSAJE INT(7) AUTO_INCREMENT, 
+    MENSAJE VARCHAR(280) NOT NULL, 
+    AUTOR_MENSAJE VARCHAR(50) NOT NULL, 
+    FECHA_MENSAJE timestamp NOT NULL, 
+    PRIMARY KEY(ID_MENSAJE) 
+);
+
+**Instalación de Netbeans**
+Apache NetBeans Releases => https://netbeans.apache.org/front/main/download/index.html

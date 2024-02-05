@@ -1,0 +1,21 @@
+**API REST y métodos HTTP**
+Una API, o Interfaz de Programación de Aplicaciones, es un método de comunicación que permite a tercero (nosotros) comunicarse entre sí para transferir información y realizar las 4 operaciones básicas usando métodos HTTP.
+
+Las API funcionan bajo el protocolo HTTP que es con el que funciona los sitios web, estos usan unos métodos o verbos HTTP que sirven para hacer las Cuatro Operaciones.
+
+El método GET sirve para obtener información de una API
+El método POST, envía información o la guarda
+El método PUT o PATCH, actualiza o edita información
+El método DELETE, borra información
+
+Las API funcionan en diferentes tipos de formatos.
+JSON, es el estándar para las API RES
+XML se usaron en otros tipos de APIS en años anteriores.
+
+Por su parte, API REST es una API diseñada bajo los principios de REST.
+
+**Conociendo algunas APIs**
+API y SDK - Desarrollo de aplicaciones - Documentación - Facebook para desarrolladores => https://developers.facebook.com/docs
+Developer twitter => https://developer.twitter.com/en
+TheCatAPI - Cats as a Service, Everyday is Caturday. => https://thecatapi.com/
+Postman | The Collaboration Platform for API Development => https://www.postman.com/

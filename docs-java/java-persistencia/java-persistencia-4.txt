@@ -1,0 +1,10 @@
+**Creación del proyecto y API KEY**
+
+**Listando datos de APIs públicas**
+**Mostrar datos de la API en la aplicación**
+**Guardando datos en APIs públicas**
+**Listar datos guardados**
+**Mostrar favoritos**
+**Eliminar datos de la API**
+
+
