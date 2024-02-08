@@ -1,0 +1,43 @@
+**Instalando GitBash en Windows**
+Puedes descargar Git aquí: https://git-scm.com
+
+Al implementar Git Bash, podrás tener una terminal de Git en el sistema operativo Windows. Esto te ayudará a acceder a tus repositorios al conectarte desde GitHub. Descubramos más acerca de esta integración.
+
+¿Qué es Git bash?
+Git Bash es una aplicación en línea que une las utilidades de Git y Bash en un sistema operativo de Windows. Mejora la experiencia de la línea de comandos y se comporta como una especie de intérprete para un sistema operativo Unix, pero adaptado para funcionar en Windows.
+
+Además, el programa permite a los usuarios acceder a las herramientas de Git,y realizar tareas de control de versiones a través de comandos de texto en lugar de una interfaz gráfica de usuario. Incluye otros comandos de Unix y herramientas como ssh , scp y rsync
+
+Instalación de Git bash paso a paso
+Para instalar este sistema de control de versiones en Windows, simplemente dirígete al repositorio de descarga.
+
+Una vez descargado, ejecútalo como cualquier otra aplicación de Windows.
+Al iniciar el instalador, asegúrate de marcar la opción de instalar Git Bash en el computador. Esto nos permitirá correr comandos de Linux en la consola sin problemas para trabajar con Git.
+
+./git bash.webp
+
+¿Cómo utilizar Git Bash?
+Git bash funciona al igual que el Bash estándar en UNIX. Una vez instalada solo tienes que abrirla en tu ordenador y luego podrás inicializar un nuevo repositorio GIT.
+
+Navega hasta el directorio que deseas usar como repositorio y ejecuta el comando “git init”. Esto creará un nuevo repositorio Git en el directorio actual.
+Abre Git Bash en tu ordenador. Esto se puede hacer de varias maneras, como hacer clic con el botón derecho del ratón en una carpeta y seleccionar “Git Bash Here” en el menú contextual.
+Inicializa un nuevo repositorio Git.
+¿Cómo navegar por las carpetas en Bash?
+El comando de Bash pwd se utiliza para imprimir el directorio de trabajo actual, que es la carpeta o ruta en la que reside la sesión actual de Bash. Es equivalente a ejecutar cd en un terminal DOS de Windows.
+
+Por otro lado, el comando de Bash ls se emplea para enumerar el contenido del directorio de trabajo actual. Este comando es equivalente a ejecutar el comando DIR en un terminal de host de consola de Windows.
+
+Es importante destacar que tanto el host de la consola de Bash como el de Windows tienen un comando cd, que se emplea para cambiar de directorio. Si se invoca cd con el nombre de un directorio adjunto, se cambiará el directorio de trabajo actual de las sesiones del terminal al argumento del directorio especificado.
+
+Comandos complementarios de Git Bash
+Windows y Linux difieren en comandos, en la forma en que registran el “enter” y en muchas otras cosas. Cuando instales Git Bash en Windows, debes elegir entre trabajar con la forma de Windows o la forma de UNIX (Linux y Mac). Algunos comandos que pueden ser familiares son:
+
+git checkout
+git commit
+git clone
+git pull
+git push
+En entornos de desarrollo profesionales, es común que las personas utilicen sistemas operativos diferentes. Si todos podemos usar los mismos comandos, el trabajo resultará más fácil.
+
+Los comandos de UNIX son los más frecuentes en equipos de desarrollo, por lo que, a menos que trabajes con tecnologías nativas de Microsoft (por ejemplo, .NET), es recomendable elegir la opción de la terminal tipo UNIX para una mejor compatibilidad con todo el equipo.
+
