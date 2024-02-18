@@ -1,0 +1,7 @@
+Es básicamente una interfaz de linea de comandos que nos proporciona laravel
+
+php artisan
+
+php artisan make:controller --help
+
+php artisan make:model --help

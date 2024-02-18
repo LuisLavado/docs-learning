@@ -1,0 +1,46 @@
+Estructura principal de Laravel
+Artisan
+Routes
+Views
+Templates
+Controllers
+Migrations
+Models
+Eloquent
+
+Nuestro proyecto
+Inicio de sesión
+Panel administrativo
+Listado
+Eliminar
+Formulario inicial
+Formulario
+Función de guardar
+Función de editar
+Validación
+Diseño web
+Diseño personalizado
+Página home
+Publicación
+Buscador
+Optimización
+Request / Response
+Mejora del código
+
+Base de datos
+Configuración inicial
+Base de datos
+Estructura de tablas
+Base de datos
+Relación de tablas
+Base de datos
+Consultas
+Base de datos
+Filtrado
+Área privada
+Autenticación
+Área privada
+
+Diseño web
+Plantilla
+Testing
