@@ -1,0 +1,28 @@
+mysqldump -u root --password=Sist3m@s --lock-tables=false --routines --triggers --events monitoreo > monitoreo.sql
+
+Donde:
+$DB_USER : Usuario de mysql
+$DB_PASSWD : Contraseña 
+$DB_NAME : Nombre de la base de datos a copiar.
+$DB_BACKUP.sql : Nombre del archivo de respaldo a generar.
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=monitoreo
+DB_USERNAME=root
+DB_PASSWORD=Sist3m@s
+
+scp /var/www/devroot/backupDB/monitoreo.sql root@216.158.235.145:/var/backupDB/restore
+
+ssh root@216.158.235.190
+password: Sist3m@s
+
+
+DATABASE SERVER Hardtech 216.158.235.145 (VPS):
+ssh root@216.158.235.145
+password: Sist3m@s
+
+mysql --user=root --password=luisito ptcalculator_end < /var/www/devroot/ptcalculator/database/backups/ptcalculator_end-2022-11-30.sql
+
+mysql -u root -p ptcalculator_end > /var/www/devroot/ptcalculator/database/backups/ptcalculator_end-2022-12-11.sql
