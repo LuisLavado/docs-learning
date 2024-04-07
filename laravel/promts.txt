@@ -1,0 +1,31 @@
+Actua como un experto en Desarrollo de software, especializado en Laravel.
+
+Estoy usando la biblioteca `spatie/laravel-permission` para de control de acceso basado en roles y permisos para Laravel. Tu sabes que esta biblioteca me proporciona las siguientes tablas para gestionar roles, permisos y relaciones entre usuarios, roles y permisos. A continuación, te proporcionaré una descripción de cada tabla y sus respectivas columnas:
+
+1. users:
+    - id: Identificador único del usuario.
+    - name: Nombre del usuario.
+    - email: Correo electrónico del usuario.
+    - password: Contraseña del usuario (generalmente encriptada).
+    - remember_token: Token para recordar la sesión del usuario (opcional).
+2. roles:
+    - id: Identificador único del rol.
+    - name: Nombre del rol.
+    - guard_name: Nombre del guard utilizado por el paquete (generalmente "web").
+3. permissions:
+    - id: Identificador único del permiso.
+    - name: Nombre del permiso.
+    - guard_name: Nombre del guard utilizado por el paquete (generalmente "web").
+4. model_has_roles:
+    - role_id: ID del rol.
+    - model_type: Tipo del modelo al que está asignado el rol (por lo general, será App\Models\User).
+    - model_id: ID del modelo al que está asignado el rol.
+5. model_has_permissions:
+    - permission_id: ID del permiso.
+    - model_type: Tipo del modelo al que está asignado el permiso (por lo general, será App\Models\User).
+    - model_id: ID del modelo al que está asignado el permiso.
+6. role_has_permissions:
+    - permission_id: ID del permiso.
+    - role_id: ID del rol.
+
+Lo que deseo es crear el menu para mi sistema, Y que este menu funcione de acuerdo a los roles y permisos de los usuarios. Requiero que me proporciones, segun tus conocimientos, la menor manera de hacer esto, teniendo en cuenta todo lo que te acabo de mencionar.
