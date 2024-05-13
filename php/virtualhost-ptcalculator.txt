@@ -1,0 +1,82 @@
+<VirtualHost *:80>
+    ServerName ptcalculator.test
+    ServerAlias pt-calculator.test
+    DocumentRoot "/var/www/devroot/ptcalculator"
+
+    # Configurar el comportamiento del servidor web en un directorio particular
+    <Directory "/var/www/devroot/ptcalculator">
+        #Options: Esta directiva define las opciones que se aplican al directorio especificado.
+        #Options Indexes FollowSymLinks Includes ExecCGI
+        Options -Indexes +FollowSymLinks +Multiviews
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Credentials: "true"
+
+        #AllowOverride: Esta directiva controla qué directivas de configuración pueden ser sobrescritas por los archivos de configuración del directorio (.htaccess). En tu configuración, AllowOverride All permite que se utilicen todos los tipos de directivas de configuración en archivos .htaccess.
+        AllowOverride All
+
+        #Require all granted: Esta directiva controla el acceso al directorio y especifica quién está autorizado a acceder. En tu caso, Require all granted permite el acceso a cualquier usuario sin restricciones. Es decir, todos los usuarios tienen permiso para acceder a este directorio.
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/ptcalculator-error.log
+    CustomLog ${APACHE_LOG_DIR}/ptcalculator-access.log combined
+</VirtualHost>
+
+# cd /etc/apache2/sites-available
+# sudo nano 000-default.conf
+# sudo nano /etc/apache2/sites-available/000-default.conf
+
+<VirtualHost *:80>
+    ServerName apimonitoreotalara.pagaltoque.com
+    #ServerAlias apimonitoreotalara.pagaltoque.com
+    DocumentRoot /var/www/monitoreo-app/public
+
+    <Directory "/var/www/monitoreo-app/public">
+        Options -Indexes +FollowSymLinks +Multiviews
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Credentials: "true"
+        Require all granted
+        AllowOverride All
+    </Directory>
+    ErrorLog /var/log/apache2/monitoreo-app-error.log
+    CustomLog /var/log/apache2/monitoreo-app-access.log combined
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName apimonitoreotalara.pagaltoque.com
+    # ServerAlias apimonitoreotalara.pagaltoque.com
+        SSLEngine on
+        SSLCertificateFile /var/www/cert/monitoreotalara/certificate.crt
+        SSLCertificateKeyFile /var/www/cert/monitoreotalara/private.key
+        SSLCertificateChainFile /var/www/cert/monitoreotalara/ca_bundle.crt
+    DocumentRoot /var/www/monitoreo-app/public
+
+    <Directory "/var/www/monitoreo-app/public">
+        Options -Indexes +FollowSymLinks +Multiviews
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Credentials: "true"
+        Require all granted
+        AllowOverride All
+    </Directory>
+    ErrorLog /var/log/apache2/monitoreo-app-error.log
+    CustomLog /var/log/apache2/monitoreo-app-access.log combined
+</VirtualHost>
+
+
+
+
+
+
+
+
+
+
+
+<VirtualHost *:80>
+        ErrorLog ${APACHE_LOG_DIR}/ptcalculator-error.log
+        CustomLog ${APACHE_LOG_DIR}/ptcalculator-access.log combined
+
+        ErrorLog "/var/log/apache2/ptcalculator-error.log"
+    CustomLog "/var/log/apache2/ptcalculator-access.log" common
+</VirtualHost>
+

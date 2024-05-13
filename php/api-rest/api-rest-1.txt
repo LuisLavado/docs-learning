@@ -1,0 +1,4 @@
+#Qué es una API y para qué sirve
+API son las siglas de Aplication Programming Interface, en español Interfaz de Programación de Aplicaciones. Se trata de un conjunto de reglas que va a definir cómo se comunican dos aplicaciones entre sí
+
+##

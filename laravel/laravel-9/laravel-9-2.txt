@@ -1,0 +1,5 @@
+Composer 👉 https://getcomposer.org/
+Node.js 👉 https://nodejs.org/en/
+Visual Studio Code 👉 https://code.visualstudio.com/
+GitHub 👉 https://github.com/platzi/introduccion-laravel-9
+Laravel 👉 https://laravel.com/

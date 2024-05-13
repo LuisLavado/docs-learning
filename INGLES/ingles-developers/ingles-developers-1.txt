@@ -1,0 +1,35 @@
+Curso de Inglés para Programadores => https://platzi.com/cursos/ingles-developers/
+
+Bienvenido o bienvenida al Curso de Inglés para Developers. Si estás aquí, es probable que te dediques al desarrollo profesional de software y quieres mejorar tu inglés para comunicarte con tus compañeros o compañeras de trabajo. Estás en el lugar correcto.
+
+¿Qué aprenderás?
+Por suerte, en esta ruta de aprendizaje podrás aprender todo lo que necesitas para ser un referente en tu campo.
+
+Cómo desarrollar software en inglés.
+Cómo comunicarse con otras personas acerca de desarrollo de software.
+Vocabulario relacionado con el desarrollador de software.
+Palabras técnicas y siglas para mejorar tu pronunciación.
+Aspectos del idioma inglés en torno a la lectura, escritura y comunicación sobre código.
+Vocabulario sobre diferentes partes de la experiencia del desarrollador de software.
+¿Cómo pronuncias las siguientes palabras?
+Una de las dificultades más importantes que tienen las personas que no dominan un nivel de inglés nativo es la pronunciación. El desarrollo de software no es la excepción. Existen múltiples palabras técnicas que tienes que practicar, ya que son frecuentes su mala pronunciación y tienes que practicar para evitar malentendidos.
+
+
+Palabra          | transcripción fonética | pronunciación |  traducion
+
+Cache            |       /kæʃ/            |  cash         |   
+Queue            |      /kjuː/            |  kiu          |   cola
+Segue            |      /ˈseɡweɪ/         |  seh-gwey
+Genre            |      /ˈʒɑːnrə/         |   
+Focus            |      /ˈfəʊkəs/         |   
+Debugger         |      /ˌdiːˈbʌɡər/
+Array            |       /əˈreɪ/
+Java             |       /ˈdʒɑːvə/
+Deployed         |      /dɪˈplɔɪd/
+Gigabyte         |      /ɡɪɡə/
+Data             |       /ˈdætə/
+API /eɪ/ /piː/ /aɪ/
+
+NOTA: Si no estás familiarizado con esos símbolos raros para escribir la pronunciación de las palabras, se trata del Alfabeto Internacional de Pronunciación o IPA en el cual puedes apoyarte para mejorar tu pronunciación.
+
+Por supuesto que Platzi tiene una variedad de cursos para que mejores tu pronunciación:
